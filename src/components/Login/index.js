@@ -20,7 +20,9 @@ class Login extends Component {
     console.log(get)
     const res = await get.json()
     console.log(res)
-    this.success(res.jwt_token)
+     if (get.ok === true) {
+      this.success(res.jwt_token)
+    }
   }
 
   render() {
