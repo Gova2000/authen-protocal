@@ -11,7 +11,7 @@ class Login extends Component {
   }
 
   login = async () => {
-    const api = 'https://apis.ccbp.in'
+    const api = 'https://apis.ccbp.in/login'
     const opt = {
       method: 'POST',
     }
