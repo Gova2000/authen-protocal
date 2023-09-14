@@ -3,7 +3,7 @@ import {Redirect, Route} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
 const Pro = props => {
-  const JJ = Cookies.get('jwt-token')
+  const JJ = Cookies.get('jwt_token')
   if (JJ === undefined) {
     return <Redirect to="/login" />
   }
